@@ -91,9 +91,9 @@ export const dictionaries = {
       cta: 'Pelajari fitur laporan',
     },
     payment: {
-      heading: 'Cetak Struk & Tiket Dapur Otomatis.',
+      heading: 'Cetak Laporan Harian ataupun bulanan.',
       subheading:
-        'Setiap transaksi langsung bisa dicetak ke printer struk dan printer dapur, atau discan lewat barcode scanner untuk mempercepat antrean saat jam sibuk.',
+        'Cetak laporan penjualan harian atau bulanan dengan satu klik, mempermudah anda dalam mengelola bisnis.',
       cta: 'Lihat semua fitur',
     },
     people: {
@@ -101,28 +101,27 @@ export const dictionaries = {
       subheading:
         'Dari warung kopi, toko kelontong, sampai resto dengan banyak cabang — Transora bantu operasional harian jadi lebih rapi dan mudah dipantau.',
       cta: 'Baca cerita mereka',
-      quote:
-        '"Sejak pakai Transora, tutup kasir yang dulu bisa satu jam sekarang cuma 10 menit. Laporan harian juga tinggal export, gak perlu hitung manual lagi."',
-      name: 'Budi Santoso',
-      role: 'Pemilik, Kedai Kopi Nusantara',
       testimonials: [
         {
           quote:
             '"Sejak pakai Transora, tutup kasir yang dulu bisa satu jam sekarang cuma 10 menit. Laporan harian juga tinggal export, gak perlu hitung manual lagi."',
           name: 'Budi Santoso',
           role: 'Pemilik, Kedai Kopi Nusantara',
+          image: '/images/people/budi.jpg',
         },
         {
           quote:
             '"Fitur cetak tiket dapur otomatis bikin pesanan gak ada yang kelewat lagi, walaupun toko lagi ramai-ramainya."',
           name: 'Sri Wulandari',
           role: 'Pemilik, Resto Sederhana',
+          image: '/images/people/sri.jpg',
         },
         {
           quote:
             '"Yang paling saya suka, Transora tetap jalan walau internet mati. Buat toko di daerah yang sinyalnya suka hilang, ini penyelamat banget."',
           name: 'Andi Prasetyo',
           role: 'Pemilik, Toko Kelontong Berkah',
+          image: '/images/people/andi.jpg',
         },
       ],
     },
@@ -170,7 +169,7 @@ export const dictionaries = {
       subheading:
         'Lisensi Transora dibeli sekali di awal — tidak ada biaya bulanan atau tahunan. Pilih paket sesuai jumlah perangkat kasir yang kamu butuhkan.',
       note: 'Sudah termasuk update aplikasi. Butuh perangkat lebih banyak? Hubungi kami untuk paket khusus.',
-      ctaButton: 'Beli via WhatsApp',
+      ctaButton: 'Beli Sekarang',
       mostPopular: 'Paling Laris',
       comingSoonBadge: 'Segera Hadir',
       comingSoonNote: 'Paket ini belum rilis — daftar untuk dapat kabar duluan.',
@@ -182,31 +181,32 @@ export const dictionaries = {
           priceNote: 'sekali bayar',
           devices: '1 perangkat kasir',
           option: [
-            'Semua Fitur',
-            'Cetak tiket dapur otomatis',
+            'Semua Fitur Offline',
+            'Cetak laporan harian/bulanan',
             'Scan barcode produk',
             'Penyimpanan Cloud 200 MB',
             'Dukungan via WhatsApp',
           ],
           imgSrc: '/images/pricing/starone.svg',
-          highlighted: false,
+          highlighted: true,
           comingSoon: false,
         },
         {
           heading: 'Business',
           price: 'Rp89rb',
           priceNote: 'sekali bayar',
-          devices: 'hingga 2 perangkat kasir',
+          devices: 'hingga 3 perangkat kasir',
           option: [
-            'Semua Fitur',
-            'Cetak tiket dapur otomatis',
+            'Semua Fitur Offline dan Online',
             'Scan barcode produk',
+            'Laporan gabungan multi-outlet',
+            'Realtime sync antar cabang/perangkat',
             'Penyimpanan Cloud 500 MB',
             'Dukungan prioritas via WhatsApp',
           ],
           imgSrc: '/images/pricing/startwo.svg',
-          highlighted: true,
-          comingSoon: false,
+          highlighted: false,
+          comingSoon: true,
         },
         {
           heading: 'Pro Multi-Outlet',
@@ -214,8 +214,10 @@ export const dictionaries = {
           priceNote: 'sekali bayar',
           devices: 'hingga 5 perangkat kasir',
           option: [
-            'Semua fitur Business',
+            'Semua Fitur Offline dan Online',
+            'Scan barcode produk',
             'Laporan gabungan multi-outlet',
+            'Realtime sync antar cabang/perangkat',
             'Penyimpanan Cloud 1 GB',
             'Dukungan prioritas via WhatsApp',
           ],

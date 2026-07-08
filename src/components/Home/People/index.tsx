@@ -30,11 +30,11 @@ const People = () => {
                             </p>
                             <div className='flex items-center gap-4 mt-auto relative z-10'>
                                 <Image
-                                    src={withBasePath('/images/people/user.png')}
+                                    src={withBasePath(item.image || '/images/people/user.jpg')}
                                     alt={item.name}
                                     width={56}
                                     height={56}
-                                    className='rounded-full'
+                                    className='rounded-full object-cover aspect-square'
                                 />
                                 <div>
                                     <h4 className='text-lg font-semibold dark:text-white'>{item.name}</h4>
