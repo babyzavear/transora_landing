@@ -15,7 +15,7 @@ export const dictionaries = {
     hero: {
       title: 'Kasir Pintar, Bisnis Auto Rapi.',
       subtitle:
-        'Transora adalah aplikasi kasir (POS) yang mencatat setiap transaksi, stok, dan laporan penjualan secara otomatis — tetap jalan walau internet mati, dan cukup dibeli sekali tanpa langganan bulanan.',
+        'Transora adalah aplikasi Point of Sale (POS), offline-first yang dirancang khusus untuk membantu Usaha Mikro, Kecil, dan Menengah (UMKM) di Indonesia. Aplikasi ini dibuat dengan filosofi bahwa teknologi kasir modern harus dapat diakses oleh siapa saja tanpa hambatan biaya atau infrastruktur internet. Dengan transora, pemilik bisnis dapat mengelola penjualan, inventaris, dan laporan keuangan mereka dengan mudah, bahkan di daerah dengan koneksi internet yang terbatas.',
       ctaPrimary: 'Coba Sekarang',
       ctaSecondary: 'Lihat Cara Kerjanya',
     },
@@ -138,7 +138,7 @@ export const dictionaries = {
         {
           question: 'Apakah ada biaya langganan bulanan?',
           answer:
-            'Tidak ada. Lisensi Transora dibeli sekali di awal sesuai paket yang kamu pilih, dan sudah termasuk update aplikasi selama masa aktif lisensi — tanpa biaya bulanan atau tahunan.',
+            'Ya. Transora berlangganan bulanan sesuai paket yang kamu pilih, dan sudah termasuk update aplikasi selama masa aktif langganan. Kalau berlangganan tahunan, kamu bisa lebih hemat dibanding harga bulanan.',
         },
         {
           question: 'Perangkat apa saja yang didukung?',
@@ -165,20 +165,29 @@ export const dictionaries = {
       ctaSecondary: 'Chat Tim Sales',
     },
     pricing: {
-      heading: 'Investasi Sekali, Pakai Selamanya.',
+      heading: 'Harga yang Sesuai Kebutuhan Tokomu.',
       subheading:
-        'Lisensi Transora dibeli sekali di awal — tidak ada biaya bulanan atau tahunan. Pilih paket sesuai jumlah perangkat kasir yang kamu butuhkan.',
+        'Berlangganan bulanan, atau pilih tahunan supaya lebih hemat. Pilih paket sesuai jumlah perangkat kasir yang kamu butuhkan.',
       note: 'Sudah termasuk update aplikasi. Butuh perangkat lebih banyak? Hubungi kami untuk paket khusus.',
       ctaButton: 'Beli Sekarang',
       mostPopular: 'Paling Laris',
       comingSoonBadge: 'Segera Hadir',
       comingSoonNote: 'Paket ini belum rilis — daftar untuk dapat kabar duluan.',
       comingSoonCta: 'Gabung Waitlist',
+      currencyPrefix: 'Rp',
+      currencySuffix: 'rb',
+      perMonthLabel: '/bulan',
+      billingToggle: {
+        monthly: 'Bulanan',
+        yearly: 'Tahunan',
+        savePrefix: 'Hemat',
+      },
+      yearlyBilledNote: 'ditagih {amount}/tahun',
+      monthlyBilledNote: 'ditagih per bulan',
       plans: [
         {
           heading: 'Starter',
-          price: 'Rp49rb',
-          priceNote: 'sekali bayar',
+          priceMonthly: 49,
           devices: '1 perangkat kasir',
           option: [
             'Semua Fitur Offline',
@@ -193,8 +202,7 @@ export const dictionaries = {
         },
         {
           heading: 'Business',
-          price: 'Rp89rb',
-          priceNote: 'sekali bayar',
+          priceMonthly: 89,
           devices: 'hingga 3 perangkat kasir',
           option: [
             'Semua Fitur Offline dan Online',
@@ -210,8 +218,7 @@ export const dictionaries = {
         },
         {
           heading: 'Pro Multi-Outlet',
-          price: 'Rp199rb',
-          priceNote: 'sekali bayar',
+          priceMonthly: 199,
           devices: 'hingga 5 perangkat kasir',
           option: [
             'Semua Fitur Offline dan Online',
@@ -250,7 +257,7 @@ export const dictionaries = {
     hero: {
       title: 'Smart Checkout, Effortless Business.',
       subtitle:
-        'Transora is a point-of-sale (POS) app that automatically records every transaction, stock change, and sales report — it keeps working even when the internet is down, and you buy it once with no monthly subscription.',
+        'Transora is an offline-first Point of Sale (POS) application designed specifically to support Micro, Small, and Medium Enterprises (MSMEs) in Indonesia. The app was created based on the philosophy that modern POS technology should be accessible to everyone, free from cost barriers or internet infrastructure limitations. With Transora, business owners can easily manage sales, inventory, and financial reports, even in areas with limited internet connectivity.',
       ctaPrimary: 'Lets Try It',
       ctaSecondary: 'See How It Works',
     },
@@ -373,7 +380,7 @@ export const dictionaries = {
         {
           question: 'Is there a monthly subscription fee?',
           answer:
-            "No. Transora is a one-time license purchase based on the plan you choose, and it includes app updates for the life of your active license — no monthly or yearly fees.",
+            'Yes. Transora is billed monthly based on the plan you choose, and it includes app updates for the life of your active subscription. Switch to yearly billing to save compared to the monthly price.',
         },
         {
           question: 'What devices are supported?',
@@ -400,20 +407,29 @@ export const dictionaries = {
       ctaSecondary: 'Chat with Sales',
     },
     pricing: {
-      heading: 'Pay Once, Use Forever.',
+      heading: 'Pricing That Fits Your Store.',
       subheading:
-        'Transora is a one-time license — no monthly or yearly fees. Pick the plan that matches how many POS devices you need.',
+        'Pay monthly, or choose yearly billing to save more. Pick the plan that matches how many POS devices you need.',
       note: 'App updates included. Need more devices? Contact us for a custom plan.',
-      ctaButton: 'Buy via WhatsApp',
+      ctaButton: 'Buy Now',
       mostPopular: 'Most Popular',
       comingSoonBadge: 'Coming Soon',
       comingSoonNote: "This plan isn't released yet — join the waitlist to hear first.",
       comingSoonCta: 'Join Waitlist',
+      currencyPrefix: '$',
+      currencySuffix: '',
+      perMonthLabel: '/month',
+      billingToggle: {
+        monthly: 'Monthly',
+        yearly: 'Yearly',
+        savePrefix: 'Save',
+      },
+      yearlyBilledNote: 'billed {amount}/year',
+      monthlyBilledNote: 'billed monthly',
       plans: [
         {
           heading: 'Starter',
-          price: '$19',
-          priceNote: 'one-time',
+          priceMonthly: 19,
           devices: '1 POS device',
           option: [
             'Transactions & product management',
@@ -427,8 +443,7 @@ export const dictionaries = {
         },
         {
           heading: 'Business',
-          price: '$39',
-          priceNote: 'one-time',
+          priceMonthly: 39,
           devices: 'up to 2 POS devices',
           option: [
             'Everything in Starter',
@@ -442,8 +457,7 @@ export const dictionaries = {
         },
         {
           heading: 'Pro Multi-Outlet',
-          price: '$79',
-          priceNote: 'one-time',
+          priceMonthly: 79,
           devices: 'up to 5 POS devices',
           option: [
             'Everything in Business',

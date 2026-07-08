@@ -1,13 +1,16 @@
 'use client'
+import { useState } from 'react'
 import { withBasePath } from '@/utils/urlHelper'
 import Image from 'next/image'
 import Link from 'next/link'
 import BrowserFrame from '@/components/Common/BrowserFrame'
+import VideoModal from '@/components/Common/VideoModal'
 import { useLanguage } from '@/context/LanguageContext'
-import { getWhatsAppLink } from '@/config/site'
+import { siteConfig } from '@/config/site'
 
 const Banner = () => {
-    const { lang, t } = useLanguage()
+    const { t } = useLanguage()
+    const [isVideoOpen, setIsVideoOpen] = useState(false)
 
     return (
         <section className='bg-header dark:bg-none dark:bg-slate-950 pt-52 pb-10'>
@@ -44,16 +47,16 @@ const Banner = () => {
                             data-aos-delay='200'
                             className='pt-8 mx-auto lg:mx-0 flex flex-col sm:flex-row gap-4'>
                             <Link
-                                href={getWhatsAppLink(lang)}
-                                target='_blank'
+                                href='#pricing'
                                 className='text-white text-xl font-medium py-6 px-12 rounded-full transition duration-300 border border-primary bg-primary hover:bg-transparent hover:text-primary hover:-translate-y-0.5 hover:shadow-lg text-center'>
                                 {t.hero.ctaPrimary}
                             </Link>
-                            <Link
-                                href='#features'
+                            <button
+                                type='button'
+                                onClick={() => setIsVideoOpen(true)}
                                 className='text-primary dark:text-white text-xl font-medium py-6 px-12 rounded-full transition duration-300 border border-primary dark:border-white/30 bg-transparent hover:bg-primary hover:text-white hover:-translate-y-0.5 text-center'>
                                 {t.hero.ctaSecondary}
-                            </Link>
+                            </button>
                         </div>
                     </div>
                     <div
@@ -70,6 +73,12 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
+            <VideoModal
+                videoUrl={siteConfig.tutorialVideoLink}
+                isOpen={isVideoOpen}
+                onClose={() => setIsVideoOpen(false)}
+                title={t.hero.ctaSecondary}
+            />
         </section>
     )
 }

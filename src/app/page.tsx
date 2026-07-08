@@ -13,7 +13,7 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Transora — Aplikasi Kasir & POS Pintar untuk Bisnis Anda',
   description:
-    'Transora adalah aplikasi kasir (POS) offline-first: transaksi, stok, cetak struk, dan laporan penjualan dalam satu aplikasi. Lisensi sekali bayar, tanpa langganan bulanan.',
+    'Transora adalah aplikasi Point of Sale (POS), offline-first yang dirancang khusus untuk membantu Usaha Mikro, Kecil, dan Menengah (UMKM) di Indonesia. Aplikasi ini dibuat dengan filosofi bahwa teknologi kasir modern harus dapat diakses oleh siapa saja tanpa hambatan biaya atau infrastruktur internet. Dengan transora, pemilik bisnis dapat mengelola penjualan, inventaris, dan laporan keuangan mereka dengan mudah, bahkan di daerah dengan koneksi internet yang terbatas.',
 }
 
 export default function Home() {

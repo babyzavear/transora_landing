@@ -14,7 +14,20 @@ export const siteConfig = {
     en: 'Smart POS Application for Your Business',
   },
   // GANTI dengan nomor WhatsApp bisnis kamu (format: kode negara + nomor, tanpa "+")
-  whatsappNumber: '6281234567890',
+  whatsappNumber: '6289697510208',
+
+  // GANTI dengan link pembelian/checkout kamu (mis. link payment gateway,
+  // Lynk.id, Mayar, Gumroad, dll). Tombol "Beli Sekarang" di section harga
+  // akan mengarah ke link ini.
+  purchaseLink: 'https://example.com/beli-transora',
+
+  // GANTI dengan link video tutorial/cara kerja Transora (mis. link YouTube).
+  // Tombol "Lihat Cara Kerjanya" akan mengarah ke link ini.
+  tutorialVideoLink: 'https://www.youtube.com/watch?v=xxxxxxxxxxx',
+
+  // Persentase diskon untuk paket tahunan dibanding bulanan.
+  // Ganti angka ini saja untuk mengubah besar diskon tahunan di seluruh halaman.
+  yearlyDiscountPercent: 20,
 } as const
 
 /**

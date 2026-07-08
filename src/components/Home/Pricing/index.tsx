@@ -1,13 +1,26 @@
 'use client'
+import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Icon } from '@iconify/react/dist/iconify.js'
 import { withBasePath } from '@/utils/urlHelper'
 import { useLanguage } from '@/context/LanguageContext'
-import { getWhatsAppLink } from '@/config/site'
+import { siteConfig, getWhatsAppLink } from '@/config/site'
+
+type Billing = 'monthly' | 'yearly'
 
 const Pricing = () => {
     const { lang, t } = useLanguage()
+    const [billing, setBilling] = useState<Billing>('monthly')
+
+    // Persentase diskon tahunan diambil dari satu sumber di src/config/site.ts
+    // (siteConfig.yearlyDiscountPercent) supaya gampang diubah dari satu tempat.
+    const discountPercent = siteConfig.yearlyDiscountPercent
+
+    const formatPrice = (amount: number) => {
+        const rounded = Math.round(amount)
+        return `${t.pricing.currencyPrefix}${rounded.toLocaleString()}${t.pricing.currencySuffix}`
+    }
 
     return (
         <section id='pricing' className='bg-header dark:bg-none dark:bg-slate-900 relative py-20 transition-colors duration-300'>
@@ -39,17 +52,47 @@ const Pricing = () => {
                     {t.pricing.subheading}
                 </p>
 
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 mb-8 mx-5 gap-6'>
+                <div
+                    data-aos='fade-up'
+                    data-aos-delay='150'
+                    className='flex items-center justify-center gap-3 mt-10'>
+                    <button
+                        type='button'
+                        onClick={() => setBilling('monthly')}
+                        className={`px-6 py-3 rounded-full text-lg font-medium border-2 transition duration-300 ${billing === 'monthly'
+                                ? 'bg-primary text-white border-primary'
+                                : 'bg-transparent text-midnight_text dark:text-white border-black/10 dark:border-white/20'
+                            }`}>
+                        {t.pricing.billingToggle.monthly}
+                    </button>
+                    <button
+                        type='button'
+                        onClick={() => setBilling('yearly')}
+                        className={`relative px-6 py-3 rounded-full text-lg font-medium border-2 transition duration-300 ${billing === 'yearly'
+                                ? 'bg-primary text-white border-primary'
+                                : 'bg-transparent text-midnight_text dark:text-white border-black/10 dark:border-white/20'
+                            }`}>
+                        {t.pricing.billingToggle.yearly}
+                        <span
+                            className={`ml-2 text-sm font-semibold px-2 py-0.5 rounded-full ${billing === 'yearly' ? 'bg-white text-primary' : 'bg-emerald-400/20 text-emerald-500'
+                                }`}>
+                            {t.pricing.billingToggle.savePrefix} {discountPercent}%
+                        </span>
+                    </button>
+                </div>
+
+                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 mb-8 mx-5 gap-6'>
                     {t.pricing.plans.map((item, index) => {
-                        const waMessage = item.comingSoon
-                            ? lang === 'id'
-                                ? `Halo, saya mau daftar waitlist untuk paket Transora ${item.heading}. Tolong kabari saya kalau sudah rilis ya.`
-                                : `Hi, I'd like to join the waitlist for the Transora ${item.heading} plan. Please let me know when it's released.`
-                            : lang === 'id'
-                                ? `Halo, saya mau beli Transora paket ${item.heading} (${item.price}). Boleh minta info lebih lanjut?`
-                                : `Hi, I'd like to buy the Transora ${item.heading} plan (${item.price}). Could you share more information?`
+                        const yearlyMonthlyEquivalent = item.priceMonthly * (1 - discountPercent / 100)
+                        const displayPrice = billing === 'monthly' ? item.priceMonthly : yearlyMonthlyEquivalent
+                        const yearlyTotal = yearlyMonthlyEquivalent * 12
 
                         const hoverFlip = !item.highlighted && !item.comingSoon
+
+                        const waitlistMessage =
+                            lang === 'id'
+                                ? `Halo, saya mau daftar waitlist untuk paket Transora ${item.heading}. Tolong kabari saya kalau sudah rilis ya.`
+                                : `Hi, I'd like to join the waitlist for the Transora ${item.heading} plan. Please let me know when it's released.`
 
                         return (
                             <div
@@ -93,12 +136,15 @@ const Pricing = () => {
                                 <h2
                                     className={`text-4xl sm:text-5xl font-semibold mb-1 ${item.highlighted ? 'text-white' : `text-midnight_text dark:text-white ${hoverFlip ? 'group-hover:text-white' : ''}`
                                         }`}>
-                                    {item.price}
+                                    {formatPrice(displayPrice)}
+                                    <span className='text-lg font-normal'>{t.pricing.perMonthLabel}</span>
                                 </h2>
                                 <p
                                     className={`text-lg font-normal ${item.comingSoon ? 'mb-1' : 'mb-8'} ${item.highlighted ? 'text-white/70' : `text-black/40 dark:text-white/40 ${hoverFlip ? 'group-hover:text-white/70' : ''}`
                                         }`}>
-                                    {item.priceNote}
+                                    {billing === 'yearly'
+                                        ? t.pricing.yearlyBilledNote.replace('{amount}', formatPrice(yearlyTotal))
+                                        : t.pricing.monthlyBilledNote}
                                 </p>
 
                                 {item.comingSoon && (
@@ -108,7 +154,7 @@ const Pricing = () => {
                                 )}
 
                                 <Link
-                                    href={getWhatsAppLink(lang, waMessage)}
+                                    href={item.comingSoon ? getWhatsAppLink(lang, waitlistMessage) : siteConfig.purchaseLink}
                                     target='_blank'
                                     className={`block text-center text-xl font-medium w-full rounded-full py-4 px-12 mb-8 border-2 transition duration-300 ${item.highlighted
                                             ? 'bg-white text-primary border-white hover:bg-transparent hover:text-white'

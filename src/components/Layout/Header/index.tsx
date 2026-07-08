@@ -6,7 +6,7 @@ import ThemeToggler from './ThemeToggler'
 import HeaderLink from '../Header/Navigation/HeaderLink'
 import MobileHeaderLink from '../Header/Navigation/MobileHeaderLink'
 import { useLanguage } from '@/context/LanguageContext'
-import { getWhatsAppLink } from '@/config/site'
+import { siteConfig } from '@/config/site'
 import type { HeaderItem } from '@/types/menu'
 
 const Header: React.FC = () => {
@@ -81,7 +81,7 @@ const Header: React.FC = () => {
                             {t.header.ctaSecondary}
                         </Link>
                         <Link
-                            href={getWhatsAppLink(lang)}
+                            href={siteConfig.purchaseLink}
                             target='_blank'
                             className='hidden lg:block bg-primary text-white hover:bg-transparent hover:text-primary border border-primary px-8 py-5 rounded-full font-medium text-lg dark:hover:text-white dark:hover:bg-white/10'>
                             {t.header.ctaPrimary}
@@ -124,7 +124,7 @@ const Header: React.FC = () => {
                                 </button>
                             </div>
                             <Link
-                                href={getWhatsAppLink(lang)}
+                                href={siteConfig.purchaseLink}
                                 target='_blank'
                                 className='bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 text-center'
                                 onClick={() => setNavbarOpen(false)}>

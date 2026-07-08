@@ -20,8 +20,7 @@ const FinalCta = () => {
                     </p>
                     <div className='relative pt-10 flex flex-col sm:flex-row gap-4 justify-center'>
                         <Link
-                            href={getWhatsAppLink(lang)}
-                            target='_blank'
+                            href='#pricing'
                             className='text-primary bg-white text-xl font-medium py-5 px-10 rounded-full transition duration-300 border border-white hover:bg-transparent hover:text-white text-center'>
                             {t.finalCta.ctaPrimary}
                         </Link>
