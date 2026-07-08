@@ -336,28 +336,27 @@ export const dictionaries = {
       subheading:
         'From coffee shops and corner stores to multi-branch restaurants — Transora keeps daily operations tidy and easy to track.',
       cta: 'Read their stories',
-      quote:
-        '"Since switching to Transora, closing the register used to take an hour — now it takes 10 minutes. Daily reports are just one export away, no more manual counting."',
-      name: 'Budi Santoso',
-      role: 'Owner, Kedai Kopi Nusantara',
       testimonials: [
         {
           quote:
             '"Since switching to Transora, closing the register used to take an hour — now it takes 10 minutes. Daily reports are just one export away, no more manual counting."',
           name: 'Budi Santoso',
           role: 'Owner, Kedai Kopi Nusantara',
+          image: '/images/people/budi.jpg',
         },
         {
           quote:
             '"Automatic kitchen ticket printing means orders never get missed, even during our busiest rush hours."',
           name: 'Sri Wulandari',
           role: 'Owner, Resto Sederhana',
+          image: '/images/people/sri.jpg',
         },
         {
           quote:
             "\"What I love most is that Transora keeps working even when the internet drops. For a shop in an area with patchy signal, it's a lifesaver.\"",
           name: 'Andi Prasetyo',
           role: 'Owner, Toko Kelontong Berkah',
+          image: '/images/people/andi.jpg',
         },
       ],
     },
