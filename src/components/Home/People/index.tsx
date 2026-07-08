@@ -30,7 +30,7 @@ const People = () => {
                             </p>
                             <div className='flex items-center gap-4 mt-auto relative z-10'>
                                 <Image
-                                    src={withBasePath(item.image || '/images/people/user.jpg')}
+                                    src={withBasePath(item.image || '/images/people/user.png')}
                                     alt={item.name}
                                     width={56}
                                     height={56}
