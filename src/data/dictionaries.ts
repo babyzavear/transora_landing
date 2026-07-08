@@ -16,7 +16,7 @@ export const dictionaries = {
       title: 'Kasir Pintar, Bisnis Auto Rapi.',
       subtitle:
         'Transora adalah aplikasi kasir (POS) yang mencatat setiap transaksi, stok, dan laporan penjualan secara otomatis — tetap jalan walau internet mati, dan cukup dibeli sekali tanpa langganan bulanan.',
-      ctaPrimary: 'Coba Gratis Sekarang',
+      ctaPrimary: 'Coba Sekarang',
       ctaSecondary: 'Lihat Cara Kerjanya',
     },
     features: {
@@ -53,8 +53,8 @@ export const dictionaries = {
     },
     stats: {
       items: [
-        { value: '500+', label: 'Toko & usaha aktif memakai Transora' },
-        { value: '1 Juta+', label: 'Transaksi diproses tiap bulan' },
+        { value: '50+', label: 'Toko & usaha aktif memakai Transora' },
+        { value: '10rb+', label: 'Transaksi diproses tiap bulan' },
         { value: '99.9%', label: 'Uptime aplikasi kasir' },
         { value: '10 Menit', label: 'Rata-rata waktu tutup kasir' },
       ],
@@ -162,7 +162,7 @@ export const dictionaries = {
       heading: 'Siap Bikin Kasir Tokomu Lebih Rapi?',
       subheading:
         'Coba Transora sekarang dan rasakan bedanya mengelola toko tanpa ribet hitung manual dan catatan tercecer.',
-      ctaPrimary: 'Coba Gratis Sekarang',
+      ctaPrimary: 'Coba Sekarang',
       ctaSecondary: 'Chat Tim Sales',
     },
     pricing: {
@@ -178,14 +178,15 @@ export const dictionaries = {
       plans: [
         {
           heading: 'Starter',
-          price: 'Rp299rb',
+          price: 'Rp49rb',
           priceNote: 'sekali bayar',
           devices: '1 perangkat kasir',
           option: [
-            'Transaksi & manajemen produk',
-            'Cetak struk otomatis',
-            'Laporan penjualan harian',
-            'Bisa dipakai offline',
+            'Semua Fitur',
+            'Cetak tiket dapur otomatis',
+            'Scan barcode produk',
+            'Penyimpanan Cloud 200 MB',
+            'Dukungan via WhatsApp',
           ],
           imgSrc: '/images/pricing/starone.svg',
           highlighted: false,
@@ -193,14 +194,15 @@ export const dictionaries = {
         },
         {
           heading: 'Business',
-          price: 'Rp599rb',
+          price: 'Rp89rb',
           priceNote: 'sekali bayar',
           devices: 'hingga 2 perangkat kasir',
           option: [
-            'Semua fitur Starter',
+            'Semua Fitur',
             'Cetak tiket dapur otomatis',
             'Scan barcode produk',
-            'Backup data otomatis',
+            'Penyimpanan Cloud 500 MB',
+            'Dukungan prioritas via WhatsApp',
           ],
           imgSrc: '/images/pricing/startwo.svg',
           highlighted: true,
@@ -208,13 +210,13 @@ export const dictionaries = {
         },
         {
           heading: 'Pro Multi-Outlet',
-          price: 'Rp1.290rb',
+          price: 'Rp199rb',
           priceNote: 'sekali bayar',
           devices: 'hingga 5 perangkat kasir',
           option: [
             'Semua fitur Business',
             'Laporan gabungan multi-outlet',
-            'Backup ke cloud',
+            'Penyimpanan Cloud 1 GB',
             'Dukungan prioritas via WhatsApp',
           ],
           imgSrc: '/images/pricing/starthree.svg',
@@ -247,7 +249,7 @@ export const dictionaries = {
       title: 'Smart Checkout, Effortless Business.',
       subtitle:
         'Transora is a point-of-sale (POS) app that automatically records every transaction, stock change, and sales report — it keeps working even when the internet is down, and you buy it once with no monthly subscription.',
-      ctaPrimary: 'Start Free Trial',
+      ctaPrimary: 'Lets Try It',
       ctaSecondary: 'See How It Works',
     },
     features: {
@@ -284,8 +286,8 @@ export const dictionaries = {
     },
     stats: {
       items: [
-        { value: '500+', label: 'Active shops & businesses using Transora' },
-        { value: '1M+', label: 'Transactions processed every month' },
+        { value: '50+', label: 'Active shops & businesses using Transora' },
+        { value: '10k+', label: 'Transactions processed every month' },
         { value: '99.9%', label: 'POS application uptime' },
         { value: '10 Min', label: 'Average register close-out time' },
       ],
@@ -393,7 +395,7 @@ export const dictionaries = {
       heading: 'Ready to Tidy Up Your Checkout?',
       subheading:
         'Try Transora today and feel the difference of running your store without manual counting and scattered notes.',
-      ctaPrimary: 'Start Free Trial',
+      ctaPrimary: 'Lets Try It',
       ctaSecondary: 'Chat with Sales',
     },
     pricing: {
