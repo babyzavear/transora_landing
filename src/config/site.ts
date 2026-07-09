@@ -16,10 +16,10 @@ export const siteConfig = {
   // GANTI dengan nomor WhatsApp bisnis kamu (format: kode negara + nomor, tanpa "+")
   whatsappNumber: '6289697510208',
 
-  // GANTI dengan link pembelian/checkout kamu (mis. link payment gateway,
-  // Lynk.id, Mayar, Gumroad, dll). Tombol "Beli Sekarang" di section harga
-  // akan mengarah ke link ini.
-  purchaseLink: 'https://example.com/beli-transora',
+  // Link pembelian/checkout SEKARANG diatur per paket & per periode tagihan
+  // (bulanan/tahunan) di src/data/dictionaries.ts, pada tiap item di dalam
+  // `pricing.plans[].purchaseLink`. Cari komentar "GANTI link checkout" di
+  // file itu untuk mengubahnya.
 
   // GANTI dengan link video tutorial/cara kerja Transora (mis. link YouTube).
   // Tombol "Lihat Cara Kerjanya" akan mengarah ke link ini.

@@ -154,7 +154,7 @@ const Pricing = () => {
                                 )}
 
                                 <Link
-                                    href={item.comingSoon ? getWhatsAppLink(lang, waitlistMessage) : siteConfig.purchaseLink}
+                                    href={item.comingSoon ? getWhatsAppLink(lang, waitlistMessage) : item.purchaseLink[billing]}
                                     target='_blank'
                                     className={`block text-center text-xl font-medium w-full rounded-full py-4 px-12 mb-8 border-2 transition duration-300 ${item.highlighted
                                             ? 'bg-white text-primary border-white hover:bg-transparent hover:text-white'

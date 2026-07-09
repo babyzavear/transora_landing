@@ -187,7 +187,7 @@ export const dictionaries = {
       plans: [
         {
           heading: 'Starter',
-          priceMonthly: 49,
+          priceMonthly: 22,
           devices: '1 perangkat kasir',
           option: [
             'Semua Fitur Offline',
@@ -199,10 +199,15 @@ export const dictionaries = {
           imgSrc: '/images/pricing/starone.svg',
           highlighted: true,
           comingSoon: false,
+          // GANTI link checkout paket Starter di bawah ini (bulanan & tahunan beda link)
+          purchaseLink: {
+            monthly: 'https://lynk.id/raproduction62/dz786n6v5z7e',
+            yearly: 'https://lynk.id/raproduction62/1dvq88mq7w8x',
+          },
         },
         {
           heading: 'Business',
-          priceMonthly: 89,
+          priceMonthly: 49,
           devices: 'hingga 3 perangkat kasir',
           option: [
             'Semua Fitur Offline dan Online',
@@ -215,6 +220,12 @@ export const dictionaries = {
           imgSrc: '/images/pricing/startwo.svg',
           highlighted: false,
           comingSoon: true,
+          // Belum dipakai selama paket ini "Segera Hadir" (tombolnya ke WhatsApp waitlist).
+          // Isi link checkout-nya di sini kalau paket ini sudah rilis nanti.
+          purchaseLink: {
+            monthly: 'https://example.com/beli-business-bulanan',
+            yearly: 'https://example.com/beli-business-tahunan',
+          },
         },
         {
           heading: 'Pro Multi-Outlet',
@@ -231,6 +242,12 @@ export const dictionaries = {
           imgSrc: '/images/pricing/starthree.svg',
           highlighted: false,
           comingSoon: true,
+          // Belum dipakai selama paket ini "Segera Hadir" (tombolnya ke WhatsApp waitlist).
+          // Isi link checkout-nya di sini kalau paket ini sudah rilis nanti.
+          purchaseLink: {
+            monthly: 'https://example.com/beli-pro-bulanan',
+            yearly: 'https://example.com/beli-pro-tahunan',
+          },
         },
       ],
     },
@@ -440,6 +457,10 @@ export const dictionaries = {
           imgSrc: '/images/pricing/starone.svg',
           highlighted: false,
           comingSoon: false,
+          purchaseLink: {
+            monthly: 'https://example.com/buy-starter-monthly',
+            yearly: 'https://example.com/buy-starter-yearly',
+          },
         },
         {
           heading: 'Business',
@@ -454,6 +475,10 @@ export const dictionaries = {
           imgSrc: '/images/pricing/startwo.svg',
           highlighted: true,
           comingSoon: false,
+          purchaseLink: {
+            monthly: 'https://example.com/buy-business-monthly',
+            yearly: 'https://example.com/buy-business-yearly',
+          },
         },
         {
           heading: 'Pro Multi-Outlet',
@@ -468,6 +493,10 @@ export const dictionaries = {
           imgSrc: '/images/pricing/starthree.svg',
           highlighted: false,
           comingSoon: true,
+          purchaseLink: {
+            monthly: 'https://example.com/buy-pro-monthly',
+            yearly: 'https://example.com/buy-pro-yearly',
+          },
         },
       ],
     },

@@ -52,7 +52,7 @@ const VideoModal = ({ videoUrl, isOpen, onClose, title = 'Video tutorial' }: Vid
                         title={title}
                         className='h-full w-full'
                         frameBorder='0'
-                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen'
                         allowFullScreen
                     />
                 </div>
