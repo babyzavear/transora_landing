@@ -3,6 +3,7 @@ import './globals.css'
 import Header from '@/components/Layout/Header'
 import Footer from '@/components/Layout/Footer'
 import ScrollToTop from '@/components/ScrollToTop'
+import WhatsAppButton from '@/components/WhatsAppButton'
 import Aoscompo from '@/utils/aos'
 import { LanguageProvider } from '@/context/LanguageContext'
 import { ThemeProvider } from 'next-themes'
@@ -27,6 +28,7 @@ export default function RootLayout({
               <Footer />
             </Aoscompo>
             <ScrollToTop />
+            <WhatsAppButton />
           </LanguageProvider>
         </ThemeProvider>
       </body>

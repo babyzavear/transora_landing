@@ -21,7 +21,7 @@ const socialLinks: socialLinks[] = [
     },
     {
         imgSrc: 'ic:baseline-whatsapp',
-        link: 'https://wa.me/',
+        link: 'https://wa.me/6289697510208?text=Halo%2C%20saya%20ingin%20bertanya%20lebih%20lanjut%20tentang%20Transora.',
     },
 ]
 
