@@ -197,7 +197,7 @@ export const dictionaries = {
             'Dukungan via WhatsApp',
           ],
           imgSrc: '/images/pricing/starone.svg',
-          highlighted: true,
+          highlighted: false,
           comingSoon: false,
           // GANTI link checkout paket Starter di bawah ini (bulanan & tahunan beda link)
           purchaseLink: {
@@ -208,20 +208,17 @@ export const dictionaries = {
         {
           heading: 'Business',
           priceMonthly: 99,
-          devices: 'hingga 3 perangkat kasir',
+          devices: 'hingga 10 perangkat kasir',
           option: [
-            'Semua Fitur Offline dan Online',
-            'Scan barcode produk',
+            'Semua Fitur Starter dan Online',
             'Laporan gabungan multi-outlet',
-            'Realtime sync antar cabang/perangkat',
+            'Realtime sync antar cabang untuk owner dashboard',
             'Penyimpanan Cloud 500 MB',
             'Dukungan prioritas via WhatsApp',
           ],
           imgSrc: '/images/pricing/startwo.svg',
-          highlighted: false,
+          highlighted: true,
           comingSoon: false,
-          // Belum dipakai selama paket ini "Segera Hadir" (tombolnya ke WhatsApp waitlist).
-          // Isi link checkout-nya di sini kalau paket ini sudah rilis nanti.
           purchaseLink: {
             monthly: 'http://lynk.id/raproduction62/rmwdoxd48y0g',
             yearly: 'http://lynk.id/raproduction62/6l1vpdndn1xz',
@@ -230,12 +227,10 @@ export const dictionaries = {
         {
           heading: 'Pro Multi-Outlet',
           priceMonthly: 299,
-          devices: 'hingga 5 perangkat kasir',
+          devices: 'hingga 30++ perangkat kasir',
           option: [
-            'Semua Fitur Offline dan Online',
-            'Scan barcode produk',
-            'Laporan gabungan multi-outlet',
-            'Realtime sync antar cabang/perangkat',
+            'Semua Fitur Business dan Online',
+            'Realtime sync lebih dari satu perangkat kasir/cabang',
             'Penyimpanan Cloud 1 GB',
             'Dukungan prioritas via WhatsApp',
           ],
@@ -449,10 +444,11 @@ export const dictionaries = {
           priceMonthly: 2,
           devices: '1 POS device',
           option: [
-            'Transactions & product management',
-            'Automatic receipt printing',
-            'Daily sales reports',
-            'Works offline',
+            'All Offline Features',
+            'Print daily/monthly reports',
+            'Scan product barcodes',
+            '200 MB Cloud Storage',
+            'Support via WhatsApp',
           ],
           imgSrc: '/images/pricing/starone.svg',
           highlighted: false,
@@ -465,12 +461,13 @@ export const dictionaries = {
         {
           heading: 'Business',
           priceMonthly: 6,
-          devices: 'up to 2 POS devices',
+          devices: 'up to 10 POS devices',
           option: [
-            'Everything in Starter',
-            'Automatic kitchen ticket printing',
-            'Barcode product scanning',
-            'Automatic data backup',
+            'All Starter and online features',
+            'Consolidated multi-outlet reports',
+            'Real-time synchronization between branches for the owner dashboard',
+            '500 MB cloud storage',
+            'Priority support via WhatsApp',
           ],
           imgSrc: '/images/pricing/startwo.svg',
           highlighted: true,
@@ -483,11 +480,11 @@ export const dictionaries = {
         {
           heading: 'Pro Multi-Outlet',
           priceMonthly: 17,
-          devices: 'up to 5 POS devices',
+          devices: 'up to 30++ POS devices',
           option: [
-            'Everything in Business',
-            'Combined multi-outlet reports',
-            'Cloud backup',
+            'All Business and online features',
+            'Real-time synchronization across multiple POS devices/branches',
+            '1 GB cloud storage',
             'Priority support via WhatsApp',
           ],
           imgSrc: '/images/pricing/starthree.svg',
