@@ -53,8 +53,8 @@ export const dictionaries = {
     },
     stats: {
       items: [
-        { value: '50+', label: 'Toko & usaha aktif memakai Transora' },
-        { value: '10rb+', label: 'Transaksi diproses tiap bulan' },
+        { value: '100+', label: 'Toko & usaha aktif memakai Transora' },
+        { value: '100rb+', label: 'Transaksi diproses tiap bulan' },
         { value: '99.9%', label: 'Uptime aplikasi kasir' },
         { value: '10 Menit', label: 'Rata-rata waktu tutup kasir' },
       ],
@@ -187,7 +187,7 @@ export const dictionaries = {
       plans: [
         {
           heading: 'Starter',
-          priceMonthly: 22,
+          priceMonthly: 29,
           devices: '1 perangkat kasir',
           option: [
             'Semua Fitur Offline',
@@ -207,7 +207,7 @@ export const dictionaries = {
         },
         {
           heading: 'Business',
-          priceMonthly: 49,
+          priceMonthly: 99,
           devices: 'hingga 3 perangkat kasir',
           option: [
             'Semua Fitur Offline dan Online',
@@ -219,17 +219,17 @@ export const dictionaries = {
           ],
           imgSrc: '/images/pricing/startwo.svg',
           highlighted: false,
-          comingSoon: true,
+          comingSoon: false,
           // Belum dipakai selama paket ini "Segera Hadir" (tombolnya ke WhatsApp waitlist).
           // Isi link checkout-nya di sini kalau paket ini sudah rilis nanti.
           purchaseLink: {
-            monthly: 'https://example.com/beli-business-bulanan',
-            yearly: 'https://example.com/beli-business-tahunan',
+            monthly: 'http://lynk.id/raproduction62/rmwdoxd48y0g',
+            yearly: 'http://lynk.id/raproduction62/6l1vpdndn1xz',
           },
         },
         {
           heading: 'Pro Multi-Outlet',
-          priceMonthly: 199,
+          priceMonthly: 299,
           devices: 'hingga 5 perangkat kasir',
           option: [
             'Semua Fitur Offline dan Online',
@@ -312,8 +312,8 @@ export const dictionaries = {
     },
     stats: {
       items: [
-        { value: '50+', label: 'Active shops & businesses using Transora' },
-        { value: '10k+', label: 'Transactions processed every month' },
+        { value: '100+', label: 'Active shops & businesses using Transora' },
+        { value: '100k+', label: 'Transactions processed every month' },
         { value: '99.9%', label: 'POS application uptime' },
         { value: '10 Min', label: 'Average register close-out time' },
       ],
@@ -446,7 +446,7 @@ export const dictionaries = {
       plans: [
         {
           heading: 'Starter',
-          priceMonthly: 19,
+          priceMonthly: 2,
           devices: '1 POS device',
           option: [
             'Transactions & product management',
@@ -464,7 +464,7 @@ export const dictionaries = {
         },
         {
           heading: 'Business',
-          priceMonthly: 39,
+          priceMonthly: 6,
           devices: 'up to 2 POS devices',
           option: [
             'Everything in Starter',
@@ -482,7 +482,7 @@ export const dictionaries = {
         },
         {
           heading: 'Pro Multi-Outlet',
-          priceMonthly: 79,
+          priceMonthly: 17,
           devices: 'up to 5 POS devices',
           option: [
             'Everything in Business',
