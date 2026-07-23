@@ -18,6 +18,7 @@ export const dictionaries = {
         'Transora adalah aplikasi Point of Sale (POS), offline-first yang dirancang khusus untuk membantu Usaha Mikro, Kecil, dan Menengah (UMKM) di Indonesia. Aplikasi ini dibuat dengan filosofi bahwa teknologi kasir modern harus dapat diakses oleh siapa saja tanpa hambatan biaya atau infrastruktur internet. Dengan transora, pemilik bisnis dapat mengelola penjualan, inventaris, dan laporan keuangan mereka dengan mudah, bahkan di daerah dengan koneksi internet yang terbatas.',
       ctaPrimary: 'Coba Sekarang',
       ctaSecondary: 'Lihat Cara Kerjanya',
+      ctaDemo: 'Jadwalkan Demo',
     },
     features: {
       heading: 'Semua yang Toko Kamu Butuhkan.',
@@ -272,6 +273,7 @@ export const dictionaries = {
         'Transora is an offline-first Point of Sale (POS) application designed specifically to support Micro, Small, and Medium Enterprises (MSMEs) in Indonesia. The app was created based on the philosophy that modern POS technology should be accessible to everyone, free from cost barriers or internet infrastructure limitations. With Transora, business owners can easily manage sales, inventory, and financial reports, even in areas with limited internet connectivity.',
       ctaPrimary: 'Lets Try It',
       ctaSecondary: 'See How It Works',
+      ctaDemo: 'Schedule a Demo',
     },
     features: {
       heading: 'Everything Your Store Needs.',

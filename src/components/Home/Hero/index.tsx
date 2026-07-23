@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import BrowserFrame from '@/components/Common/BrowserFrame'
 import VideoModal from '@/components/Common/VideoModal'
+import CalendlyPopupButton from '@/components/Common/CalendlyPopupButton'
 import { useLanguage } from '@/context/LanguageContext'
 import { siteConfig } from '@/config/site'
 
@@ -57,6 +58,9 @@ const Banner = () => {
                                 className='text-primary dark:text-white text-xl font-medium py-6 px-12 rounded-full transition duration-300 border border-primary dark:border-white/30 bg-transparent hover:bg-primary hover:text-white hover:-translate-y-0.5 text-center'>
                                 {t.hero.ctaSecondary}
                             </button>
+                            <CalendlyPopupButton className='text-primary dark:text-white text-xl font-medium py-6 px-12 rounded-full transition duration-300 border border-primary dark:border-white/30 bg-transparent hover:bg-primary hover:text-white hover:-translate-y-0.5 text-center'>
+                                {t.hero.ctaDemo}
+                            </CalendlyPopupButton>
                         </div>
                     </div>
                     <div

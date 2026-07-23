@@ -25,6 +25,10 @@ export const siteConfig = {
   // Tombol "Lihat Cara Kerjanya" akan mengarah ke link ini.
   tutorialVideoLink: 'https://www.youtube.com/watch?v=xxxxxxxxxxx',
 
+  // Link Calendly untuk penjadwalan demo. Tombol "Jadwalkan Demo" akan
+  // membuka link ini sebagai popup Calendly.
+  calendlyDemoLink: 'https://calendly.com/raproduction62/demo-transora-pos',
+
   // Persentase diskon untuk paket tahunan dibanding bulanan.
   // Ganti angka ini saja untuk mengubah besar diskon tahunan di seluruh halaman.
   yearlyDiscountPercent: 20,
